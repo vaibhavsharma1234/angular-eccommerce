@@ -1,0 +1,39 @@
+<div class="mt-3">
+  <ul class="bg-slate-500 dis h-[4vh] justify-evenly m-4 items-center">
+    <li *ngFor="let ctg of category" class="font-bold mr-2">{{ ctg.text }}</li>
+  </ul>
+</div>
+<hr class="border-t-2 border-gray-300 my-8" />
+
+<div class="flex justify-around gap-4">
+  <div class="w-[30%] h-[12rem]">
+    <img
+      class="w-full h-full object-cover"
+      src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg"
+      alt="Image"
+    />
+  </div>
+
+  <div class="w-[30%] h-[12rem]">
+    <img
+      class="w-full h-full object-cover"
+      src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg"
+      alt="Image"
+    />
+  </div>
+
+  <div class="w-[30%] h-[12rem]">
+    <img
+      class="w-full h-full object-cover"
+      src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg"
+      alt="Image"
+    />
+  </div>
+</div>
+<div class="flex justify-between m-4 font-bold text-2xl">
+  <h2>all categories</h2>
+  <p>view all</p>
+</div>
+<hr class="border-t-2 border-gray-300 my-8" />
+<app-category-card [categories]="category"></app-category-card>
+<hr class="border-t-5 border-b-8 border-gray-300 my-8" />

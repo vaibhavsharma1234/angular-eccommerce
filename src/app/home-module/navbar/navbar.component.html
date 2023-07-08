@@ -1,0 +1,36 @@
+<nav>
+  <ul class="flex justify-around items-center h-[10vh]">
+    <li>
+      <img
+        class="h-[8vh]"
+        src="https://media.istockphoto.com/id/1347903722/photo/carnival-or-carnaval-gold-colorful-glitter-texture-font.jpg?s=1024x1024&w=is&k=20&c=sCVzs3UX9Y3_YfJ1_fp4lDorVnlZmAbdSYDPrpyXSlA="
+        alt=""
+      />
+    </li>
+    <li>
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input
+          class="w-[30vw] bg-gray-300"
+          type="search"
+          placeholder="search for products"
+          pInputText
+          [(ngModel)]="value"
+        />
+      </span>
+    </li>
+    <div class="flex justify- gap-x-7">
+      <li>
+        <span> <i class="pi pi-th-large mr-2"></i> categories</span>
+      </li>
+      <!-- class="" -->
+      <li>
+        <span><i class="pi pi-shopping-bag mr-2"></i>cart</span>
+      </li>
+
+      <li>
+        <span><i class="pi pi-user mr-2"></i>account</span>
+      </li>
+    </div>
+  </ul>
+</nav>
